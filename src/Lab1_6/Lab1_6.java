@@ -6,11 +6,11 @@ public class Lab1_6 {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter Number: ");
-        int a = input.nextInt();
+        int number = input.nextInt();
 
         for (int i = 1; i <= 12; i++) {
-            int b = a * i;
-            System.out.println(a + "x" + i + "=" + b);
+            int result = number * i;
+            System.out.println(number + "x" + i + "=" + result);
         }
 
     }
