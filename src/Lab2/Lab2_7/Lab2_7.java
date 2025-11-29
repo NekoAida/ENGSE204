@@ -13,11 +13,9 @@ class BankAccount {
 
     public void withdraw(double amount) {
         if (amount <= this.balance) {
-            // กรณีเงินพอถอน: หักเงินและแจ้งเตือน
             this.balance -= amount;
             System.out.println("Withdrawal successful.");
         } else {
-            // กรณีเงินไม่พอ: ไม่หักเงิน และแจ้งเตือน
             System.out.println("Insufficient funds.");
         }
     }
