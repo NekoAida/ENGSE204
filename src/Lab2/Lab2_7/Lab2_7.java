@@ -41,12 +41,12 @@ public class Lab2_7 {
         System.out.print("Enter Withdraw Amount 2: ");
         double withdrawAmount2 = input.nextDouble();
 
-        BankAccount myAccount = new BankAccount(ownerName, initialBalance);
+        BankAccount Account = new BankAccount(ownerName, initialBalance);
 
-        myAccount.withdraw(withdrawAmount1);
-        myAccount.withdraw(withdrawAmount2);
+        Account.withdraw(withdrawAmount1);
+        Account.withdraw(withdrawAmount2);
 
-        myAccount.displayBalance();
+        Account.displayBalance();
 
         input.close();
     }
