@@ -49,27 +49,27 @@ class Processor {
 
 public class Lab5_6 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter Video Title: ");
-        String vTitle = input.nextLine();
+        String videoName = scan.nextLine();
 
         System.out.print("Enter Video Duration: ");
-        int vDuration = input.nextInt();
-        input.nextLine(); // เคลียร์ Buffer
+        int minutes = scan.nextInt();
+        scan.nextLine();
 
         System.out.print("Enter Audio Title: ");
-        String aTitle = input.nextLine();
+        String audioName = scan.nextLine();
 
         System.out.print("Enter Audio Quality: ");
-        String aQuality = input.nextLine();
+        String soundQuality = scan.nextLine();
 
-        Video video = new Video(vTitle, vDuration);
-        Processor.runProcessor(video);
+        Video myVideo = new Video(videoName, minutes);
+        Processor.runProcessor(myVideo);
 
-        Audio audio = new Audio(aTitle, aQuality);
-        Processor.runProcessor(audio);
+        Audio myAudio = new Audio(audioName, soundQuality);
+        Processor.runProcessor(myAudio);
 
-        input.close();
+        scan.close();
     }
 }
